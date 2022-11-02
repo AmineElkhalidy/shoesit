@@ -1,70 +1,141 @@
+/* ----- GOOGLE FONTS ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --header-height: 3.5rem;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Colors */
+  --first-color: #f1f3f5;
+  --first-color-alt: #f4f5f7;
+  --second-color: #ffbd8a;
+  --title-color: #e6e6e6;
+  --text-color: #000;
+  --text-color-light: #808080;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* Font Sizes */
+  --body-font: "Poppins", sans-serif;
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.938rem;
+  --smaller-font-size: 0.813rem;
+
+  /* Margins */
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Font Weights */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Z index */
+  --z-fixed: 100;
+  --z-tooltip: 10;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@media screen and (max-width: 768px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.938rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
-a:hover {
-  color: #535bf2;
+
+/* ----- BASE ----- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  transition: 0.3s;
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border: none;
+  outline: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* ----- REUSABLE CSS CLASSES ----- */
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+}
+
+/* ----- BUTTON ----- */
+.button {
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 2rem;
+  font-weight: var(--font-medium);
+  background-color: #4ca5ff;
+  /* background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 78%); */
+}
+
+.button:hover {
+  /* background-color: #130f40; */
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 340px) {
+  .button {
+    font-size: 0.85rem;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
