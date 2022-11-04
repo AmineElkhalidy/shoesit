@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
+    "framer-motion": "^7.6.4",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",

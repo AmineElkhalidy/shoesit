@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: var(--z-fixed);
+}
+
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+
+  &__bag {
+    color: white;
+  }
+}

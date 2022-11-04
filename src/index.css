@@ -54,6 +54,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 
 body {
@@ -93,7 +94,7 @@ button {
 
 /* ----- REUSABLE CSS CLASSES ----- */
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -112,9 +113,9 @@ button {
 
 /* ----- BUTTON ----- */
 .button {
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
   color: white;
-  border-radius: 2rem;
+  border-radius: 6rem;
   font-weight: var(--font-medium);
   background-color: #4ca5ff;
   /* background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 78%); */
