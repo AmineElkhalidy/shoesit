@@ -1,0 +1,38 @@
+.gender {
+  &__container {
+    max-width: 100%;
+    min-height: calc(100vh - 4rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 4rem;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__data {
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .gender div {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

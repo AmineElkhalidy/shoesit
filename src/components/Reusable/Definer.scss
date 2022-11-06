@@ -1,0 +1,31 @@
+.definer__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: white;
+  color: #ffbd8a;
+
+  border-radius: 50%;
+
+  height: 150px;
+  width: 150px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4ca5ff;
+  }
+
+  & img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: var(--mb-1);
+  }
+
+  & h3 {
+    font-weight: var(--font-medium);
+  }
+}
