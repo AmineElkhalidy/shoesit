@@ -11,9 +11,36 @@
 nav {
   height: var(--header-height);
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
-  &__bag {
-    color: white;
+  div {
+    position: relative;
+
+    // span {
+    //   width: 13px;
+    //   height: 13px;
+    //   display: inline-block;
+    //   border-radius: 50%;
+    //   background-color: white;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    // }
+  }
+}
+
+.bag__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bag {
+  cursor: pointer;
+
+  &:hover {
+    fill: #4ca5ff;
   }
 }

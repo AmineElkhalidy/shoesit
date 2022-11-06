@@ -14,8 +14,10 @@
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.3",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "typeit-react": "^2.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
