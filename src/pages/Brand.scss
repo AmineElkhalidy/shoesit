@@ -1,27 +1,31 @@
 .brand {
-  max-width: 100%;
-  min-height: 100vh;
+  &__container {
+    max-width: 100%;
+    min-height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  gap: 1rem;
+    gap: 1rem;
 
-  padding: 5rem 0 2rem;
+    padding: 5rem 0 2rem;
+  }
 
   &__title {
     color: white;
     text-align: center;
   }
 
-  & div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
+  &__data {
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem;
+    }
   }
 }
 
