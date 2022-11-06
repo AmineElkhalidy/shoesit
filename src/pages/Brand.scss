@@ -1,0 +1,34 @@
+.brand {
+  max-width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 5rem 0 2rem;
+
+  &__title {
+    color: white;
+    text-align: center;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .brand div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
