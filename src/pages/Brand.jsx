@@ -5,7 +5,13 @@ import "./Brand.scss";
 import { motion } from "framer-motion";
 
 // Icons
-import { SiAdidas, SiNike, SiPuma, SiNewbalance, SiReebok } from "react-icons";
+import {
+  SiAdidas,
+  SiNike,
+  SiPuma,
+  SiNewbalance,
+  SiReebok,
+} from "react-icons/si";
 
 // Definer component
 import Definer from "../components/Reusable/Definer";
@@ -27,7 +33,7 @@ const Brand = () => {
             <Definer
               route="/new-balance"
               Icon={SiNewbalance}
-              brand="New Balance"
+              brand="NewBalance"
             />
           </div>
         </div>
