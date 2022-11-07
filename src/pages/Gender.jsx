@@ -19,16 +19,8 @@ const Gender = () => {
           <h2 className="gender__title">Choose your gender:</h2>
 
           <div>
-            <Definer
-              route={"/gender/man/brand"}
-              Icon={FcBusinessman}
-              gender="Man"
-            />
-            <Definer
-              route={"/gender/woman/brand"}
-              Icon={FcBusinesswoman}
-              gender="Woman"
-            />
+            <Definer route={"/gender/man/brand"} Icon={FcBusinessman} />
+            <Definer route={"/gender/woman/brand"} Icon={FcBusinesswoman} />
           </div>
         </div>
       </motion.div>
