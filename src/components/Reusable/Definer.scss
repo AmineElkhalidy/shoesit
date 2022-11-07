@@ -18,6 +18,10 @@
     border-color: var(--second-color);
   }
 
+  &__icon {
+    fill: #4ca5ff;
+  }
+
   @media screen and (max-width: 500px) {
     & {
       height: 120px;
