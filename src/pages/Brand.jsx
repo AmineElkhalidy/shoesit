@@ -28,7 +28,7 @@ const Brand = () => {
     <section className="brand">
       <motion.div className="brand__container container">
         <div className="brand__data">
-          <h2 className="brand__title">Choose your favorite brand:</h2>
+          {/* <h2 className="brand__title">Choose your favorite brand:</h2> */}
 
           <div>
             <Definer route={`${pathname}/adidas`} Icon={SiAdidas} />

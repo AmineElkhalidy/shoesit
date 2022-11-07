@@ -5,7 +5,6 @@ import "./Gender.scss";
 import { motion } from "framer-motion";
 
 // Icons
-import { IoIosMan, IoIosWoman } from "react-icons/io";
 import { FcBusinessman, FcBusinesswoman } from "react-icons/fc";
 
 // Components
@@ -16,7 +15,7 @@ const Gender = () => {
     <section className="gender">
       <motion.div className="gender__container container">
         <div className="gender__data">
-          <h2 className="gender__title">Choose your gender:</h2>
+          {/* <h2 className="gender__title">Choose your gender:</h2> */}
 
           <div>
             <Definer route={"/gender/man/brand"} Icon={FcBusinessman} />

@@ -113,7 +113,7 @@ button {
 
 /* ----- BUTTON ----- */
 .button {
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   color: white;
   border-radius: 6rem;
   font-weight: var(--font-medium);

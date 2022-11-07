@@ -1,12 +1,12 @@
 .definer__card {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
   border-radius: 50%;
 
-  height: 180px;
-  width: 180px;
+  height: 160px;
+  width: 160px;
 
   cursor: pointer;
 
@@ -16,5 +16,12 @@
 
   &:hover {
     border-color: var(--second-color);
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      height: 120px;
+      width: 120px;
+    }
   }
 }
