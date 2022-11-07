@@ -1,0 +1,131 @@
+.notfound {
+  padding: 8rem 0 2rem;
+  min-height: 100vh;
+  display: grid;
+
+  &__container {
+    display: grid;
+    align-content: center;
+    row-gap: 2.5rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: var(--biggest-font-size);
+    margin: 0.75rem 0;
+  }
+
+  &__description {
+    color: whitesmoke;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #4ca5ff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    transition: 0.4s;
+  }
+
+  &__button:hover {
+    box-shadow: 0 4px 12px hsla(38, 69%, 8%, 0.2);
+  }
+
+  &__img img {
+    width: 230px;
+    animation: floaty 1.8s infinite alternate;
+  }
+
+  &__img {
+    justify-self: center;
+  }
+
+  &__shadow {
+    width: 130px;
+    height: 24px;
+    background-color: hsla(38, 21%, 19%, 0.16);
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: shadow 1.8s infinite alternate;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    font-size: var(--smaller-font-size);
+    color: whitesmoke;
+    align-self: flex-end;
+  }
+}
+
+/* Animate ghost */
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.85, 0.85);
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .notfound {
+    padding-top: 7rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .notfound__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .nptfound__data {
+    text-align: initial;
+  }
+  .nptfound__img img {
+    width: 400px;
+  }
+  .nptfound__shadow {
+    width: 250px;
+    height: 40px;
+  }
+}
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.7;
+  }
+
+  .notfound {
+    height: initial;
+    row-gap: 4rem;
+  }
+}
+
+/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 3.1;
+  }
+}
