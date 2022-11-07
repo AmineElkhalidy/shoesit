@@ -1,12 +1,7 @@
 .definer__card {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
-  background-color: white;
-  color: #ffbd8a !important;
 
   border-radius: 50%;
 
@@ -15,17 +10,11 @@
 
   cursor: pointer;
 
+  border: 2px solid #4ca5ff;
+
+  transition: 0.3s;
+
   &:hover {
-    background-color: #4ca5ff;
-  }
-
-  & img {
-    height: 40px;
-    width: 40px;
-    margin-bottom: var(--mb-1);
-  }
-
-  & h3 {
-    font-weight: var(--font-medium);
+    border-color: var(--second-color);
   }
 }

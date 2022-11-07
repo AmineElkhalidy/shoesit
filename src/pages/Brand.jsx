@@ -23,7 +23,7 @@ import Definer from "../components/Reusable/Definer";
 
 const Brand = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   return (
     <section className="brand">
       <motion.div className="brand__container container">
