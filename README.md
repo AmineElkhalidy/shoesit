@@ -8,3 +8,4 @@ Shoesit is an e-commerce website (under construction) that will allow users to c
   - React.js
   - Vite.js
   - Commercejs
+  - SASS
