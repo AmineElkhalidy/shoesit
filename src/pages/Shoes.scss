@@ -1,0 +1,13 @@
+.shoes {
+  margin-top: 10rem;
+  min-height: calc(100vh - 10rem);
+  padding-bottom: 2rem;
+
+  &__container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem 1rem;
+
+    justify-items: center;
+    align-items: center;
+  }
+}

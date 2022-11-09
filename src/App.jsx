@@ -15,8 +15,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/gender" element={<Gender />} />
-      <Route path="/gender/:gender/:brand" element={<Brand />} />
-      <Route path="/gender/:gender/:brand/shoes" element={<Shoes />} />
+      <Route path="/gender/:gender/brand" element={<Brand />} />
+      <Route path="/gender/:gender/brand/:brand" element={<Shoes />} />
       <Route path="*" element={<NotFound />} exact />
     </Routes>
   );
