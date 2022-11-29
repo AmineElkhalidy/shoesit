@@ -5,7 +5,7 @@ Shoesit is an e-commerce website (under construction) that will allow users to c
 ![preview image](./src/assets/preview.png)
 
 - Technologies used:
-  - React.js
-  - Vite.js
+  - Reactjs
+  - Vitejs
   - Commercejs
   - SASS
